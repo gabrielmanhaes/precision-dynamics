@@ -556,7 +556,7 @@ def run_sleep_profile_simulation(output_dir=None):
          for remission, controlling for baseline depression severity.
        - High vs low insomnia: remission reduced ~31%.
 
-    3. Mega-analysis of 5 RCTs (van Dalfsen et al. 2025, J Affect Disord)
+    3. Mega-analysis of 5 RCTs (van Dalfsen et al. 2025, J Affect Disord 387:119544, DOI:10.1016/j.jad.2025.119544)
        - N=898 MDD patients.
        - PHARMACOTHERAPY: OR = 0.219 (insomnia → markedly reduced remission)
        - PSYCHOTHERAPY: NOT significant

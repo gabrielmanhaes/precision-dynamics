@@ -227,7 +227,7 @@ def build_targets(include_theoretical=False) -> List[EmpiricalTarget]:
         train=True))
     targets.append(EmpiricalTarget(
         name='psychosis_hrv', published_value=0.80, tolerance=0.10,
-        weight=1.0, category='hrv', citation='Clamor 2016 (d=-0.46)',
+        weight=1.0, category='hrv', citation='Clamor 2016 (HF-HRV g=-0.98, 95% CI [-1.56,-0.41], k=29; model intentionally conservative)',
         train=False))
 
     # --- BDNF (ratio to normal) ---
@@ -249,13 +249,13 @@ def build_targets(include_theoretical=False) -> List[EmpiricalTarget]:
     # --- Meditation alpha (TEST, blind prediction validated) ---
     # Uses cortical IDLING alpha, not thalamocortical alpha.
     # Meditation reduces cognitive engagement → increases idling alpha.
-    # Published: ~16% increase (Ahani et al. 2014, meta-analysis of 56 studies)
+    # Published: +9.1% average across regions (Ahani et al. 2014, single study, N=34)
     # Model: idling alpha predicts +20% (IDLING_ALPHA_GAIN=0.5, engagement 0.5→0.2)
     # This was a BLIND prediction generated before seeing published values.
     targets.append(EmpiricalTarget(
-        name='meditation_alpha_change', published_value=1.16, tolerance=0.10,
+        name='meditation_alpha_change', published_value=1.09, tolerance=0.10,
         weight=1.0, category='alpha_idling',
-        citation='Ahani 2014 (meta-analysis, +16% alpha during meditation)',
+        citation='Ahani 2014 (single study, N=34, +9.1% average across regions)',
         train=False))
 
     if include_theoretical:
