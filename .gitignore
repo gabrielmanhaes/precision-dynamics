@@ -1,0 +1,66 @@
+# Environment and secrets
+.env
+.env.*
+*.key
+secrets.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Large data files
+*.pkl
+*.h5
+*.hdf5
+data/
+
+# Archive — old model versions and figures
+archive/
+
+# Figures — exclude all except definitive corrected paper figures
+figures/v2/
+figures/v3/
+figures/hypotheses/
+figures/atomoxetine/
+figures/sleep_profiles/
+figures/sensory_deprivation/
+figures/paper/20260314_002621/
+figures/paper/20260314_131814/
+figures/paper/20260314_132132/
+figures/paper/20260315_190225/
+figures/paper/20260315_193344/
+figures/paper/test1_plasticity_maintenance.png
+figures/paper/test2_precision_ordering.png
+# Keep only: figures/paper/20260315_193402/ (the definitive corrected set)
+# Keep only: figures/paper/latest/ (symlink to definitive set)
+
+# Temporary outputs
+*.tmp
+*.log
+
+# Claude
+.claude/
