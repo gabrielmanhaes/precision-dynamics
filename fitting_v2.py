@@ -41,7 +41,7 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Optional, Tuple
 
 from parameters import *
-from plasticity_v2 import (
+from model import (
     simulate_v2, simulate_normal_24h, simulate_depression,
     simulate_psychosis, simulate_psilocybin, simulate_ketamine,
     simulate_ptsd, simulate_adhd,

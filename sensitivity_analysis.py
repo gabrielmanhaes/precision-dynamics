@@ -44,7 +44,7 @@ SIM_OVERRIDEABLE = {
     'GAMMA_SELFMODEL': 0.65,
 }
 
-# Operationalization params — used in plasticity_v2 functions imported by fitting_v3
+# Operationalization params — used in model functions imported by fitting_v3
 # These need module-level reload to take effect
 OPERATIONALIZATION = {
     'HRV_NE_GAIN': 1.0,
@@ -64,7 +64,7 @@ def run_with_extra_params(extra_params, targets):
 def run_with_operationalization_change(param_name, new_value, targets):
     """For operationalization params, we need to reload modules."""
     import parameters as pmod
-    import plasticity_v2 as p2mod
+    import model as p2mod
 
     # Save originals
     orig_pmod = getattr(pmod, param_name)

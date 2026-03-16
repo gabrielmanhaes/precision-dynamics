@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ## Quick Start
 
 ```python
-from plasticity_v2 import simulate_v2
+from model import simulate_v2
 from validation_summary import BEST_FIT
 
 # Run 24-hour simulation with validated parameters
@@ -53,7 +53,7 @@ results = simulate_v2(BEST_FIT)
 
 ```
 precision-dynamics/
-├── plasticity_v2.py          # Core ODE model
+├── model.py          # Core ODE model
 ├── parameters.py             # All 163 parameters with biological sources
 ├── validation_summary.py     # Definitive 9-parameter validated set (BEST_FIT)
 ├── fitting_v2.py             # Differential evolution optimization

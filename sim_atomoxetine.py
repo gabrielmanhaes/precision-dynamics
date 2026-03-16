@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 from parameters import *
-from plasticity_v2 import (
+from model import (
     simulate_v2, SimulationState,
     p_to_eeg_alpha, p_to_lzw, p_to_p300,
     ne_to_pupil, ne_cort_to_hrv, plasticity_to_bdnf,

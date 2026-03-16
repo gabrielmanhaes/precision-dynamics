@@ -38,7 +38,7 @@ from fitting_v3 import (
     CONSOLIDATED_FIXED_VALUES, FITTED_PARAMS_CONSOLIDATED,
 )
 from parameters import *
-from plasticity_v2 import (
+from model import (
     simulate_v2,
     p_to_eeg_alpha, p_to_lzw,
     ne_to_pupil, ne_cort_to_hrv, plasticity_to_bdnf,

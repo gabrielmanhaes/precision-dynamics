@@ -6,7 +6,7 @@ WHAT THIS SIMULATION TESTS:
   Does baseline sleep quality modulate psilocybin therapeutic response?
 
 WHAT THE MODEL ACTUALLY SHOWS:
-  The model's equilibrium subtraction architecture (plasticity_v2.py ~line 867)
+  The model's equilibrium subtraction architecture (model.py ~line 867)
   cancels tonic monoamine coupling to first order. This means:
     - The psilocybin afterglow is negligible (no sustained P reduction)
     - There is NO plasticity consolidation effect for sleep to modulate
@@ -73,7 +73,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 
 from parameters import *
-from plasticity_v2 import (
+from model import (
     simulate_v2, SimulationState,
     p_to_eeg_alpha, p_to_lzw,
     ne_to_pupil, ne_cort_to_hrv, plasticity_to_bdnf,
@@ -435,7 +435,7 @@ def run_sleep_profile_simulation(output_dir=None):
   2. SUSTAINED BENEFIT IS ZERO for all profiles. Drug and control P_c
      converge within 2-3 days. There is no afterglow to consolidate.
 
-  3. ROOT CAUSE: The equilibrium subtraction at plasticity_v2.py ~line 867:
+  3. ROOT CAUSE: The equilibrium subtraction at model.py ~line 867:
        sup = ALPHA_NE * ne_effective + ALPHA_5HT * sht_effective
      With ALPHA_NE=0.05 and ALPHA_5HT=0.05 (both at lower bounds), the
      monoamine pathway is effectively inert. The psilocybin afterglow
@@ -519,7 +519,7 @@ def run_sleep_profile_simulation(output_dir=None):
   NOTE ON MONOTONICITY: The inverse relationship between noise and
   Cohen's d is mathematically forced, not emergent from dynamics.
 
-  Causal chain (plasticity_v2.py):
+  Causal chain (model.py):
     noise_scale → OU amplitude (SIGMA_NOISE * ns * dW, line 828)
                 → P_c intraday variability → daily P_c variance
                 → pooled_SD (Cohen's d denominator)
