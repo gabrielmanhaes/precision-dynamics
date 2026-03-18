@@ -86,3 +86,27 @@ reduction, different post-acute outcomes, different mechanisms.
 meditation effects on P_selfmodel correctly. These would require additional
 ODE pathways (thalamocortical suppression for propofol, cognitive
 engagement modulation for meditation) not currently implemented.
+
+## Creativity and Precision Dynamics
+
+The precision dynamics framework implies a specific account of creative
+cognition. Genuine cross-domain structural insight — the kind that transfers
+formal machinery between domains rather than producing surface novelty —
+requires two operations making opposing demands on the precision system:
+generation of unusual connections requires reduced precision weighting on
+learned priors, while evaluation of whether those connections are structurally
+valid requires restored precision. This predicts that creative achievement
+should correlate with P_range — the distance between an individual's low-P
+generative floor and high-P evaluative ceiling — rather than with mean
+precision level. It further predicts that the same individual differences
+predicting depth of psychedelic response (absorption, capacity for ego
+dissolution, mystical experience intensity) should predict creative achievement
+through the same underlying variable: voluntary access to low-P states with
+sufficient evaluative stability on recovery. This prediction is testable in a
+factor analysis study measuring absorption, meditation depth, lucid dreaming
+frequency, psychedelic response depth, and validated creative achievement in
+the same individuals. The framework also predicts that pharmacological
+precision elevation — including SSRI treatment — should suppress the generative
+low-P state, explaining the subjective creative suppression reported by many
+patients not as a side effect but as a direct consequence of the therapeutic
+mechanism operating in a non-pathological precision system.
