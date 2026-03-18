@@ -1,0 +1,2 @@
+n_treatment,n_complete,hrv_median,high_hrv_remission,low_hrv_remission,risk_difference,p_one_tailed,p_two_tailed,odds_ratio,n_high_hrv,n_low_hrv,prediction_confirmed,n_outliers_excluded,high_hrv_remission_clean,low_hrv_remission_clean,risk_difference_clean
+244,244,34.54390550011952,0.36065573770491804,0.3770491803278688,0.016393442622950782,0.44724580878556036,0.8944916175711207,1.0729665071770336,122,122,False,2,0.371900826446281,0.371900826446281,0.0
