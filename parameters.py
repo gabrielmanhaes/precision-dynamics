@@ -378,6 +378,44 @@ P_SENSORY_BASELINE = 0.75  # FREE: sensory cortex waking P
 P_CONCEPTUAL_BASELINE = 0.70  # FREE: conceptual/belief waking P
 P_SELFMODEL_BASELINE = 0.60  # FREE: self-model (DMN) waking P
 
+# P_selfmodel: Precision of the self-model
+#
+# Theoretical extension (beyond CANAL):
+# P_selfmodel is proposed as not merely the highest level of the precision
+# hierarchy but the variable whose magnitude constitutes the amplitude of
+# unified conscious experience.
+#
+# Predicted relationships:
+#   - Normal waking consciousness: P_selfmodel in healthy range (stable,
+#     permeable self-model)
+#   - Depression: P_selfmodel canalized at pathologically high precision
+#     around negative self-referential content (rigid DMN, high internal
+#     coherence)
+#   - Psychosis: P_conceptual insufficiently precise — high-level priors
+#     fail to weight down sensory prediction errors (aberrant salience).
+#     NOT a globally low-P condition. P_selfmodel may be fragmented rather
+#     than uniformly low.
+#   - Low-dose psychedelics: mild P_selfmodel reduction (loosened
+#     self-boundary)
+#   - High-dose psychedelics: strong P_selfmodel reduction (ego dissolution)
+#   - Ego dissolution threshold: P_selfmodel approaching zero
+#
+# Measurable proxy: DMN (Default Mode Network) coherence
+#   - Decreases systematically with psychedelic dose
+#   - Abnormally high and internally rigid in depression
+#   - Fragmented in psychosis
+#   - Predicts mystical experience depth and therapeutic outcome
+#
+# This interpretation does not change the ODE equations or parameter values.
+# It reframes what P_selfmodel represents — the math was already tracking
+# this variable. The consciousness amplitude interpretation makes explicit
+# what was embedded in the model structure.
+#
+# Testable prediction without refitting: add DMN coherence values from
+# published psychedelic neuroimaging studies as test targets and check
+# whether existing P_selfmodel trajectories predict the correct ordering
+# and approximate magnitudes.
+
 # Per-level sleep targets
 P_SENSORY_REM = 0.22  # FREE
 P_CONCEPTUAL_REM = 0.25  # FREE
