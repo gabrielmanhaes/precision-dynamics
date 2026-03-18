@@ -1,0 +1,20 @@
+SENSITIVITY ANALYSIS: Bidirectional ATX vs Psilocybin Prediction
+=================================================================
+
+Individual parameter sweeps (+/-50%, 21 steps each):
+Parameter                 |  Min deviation causing failure | Robust?
+--------------------------------------------------------------------
+  BETA_PLAST              |                          Never |     Yes
+  ALPHA_POWER_EXPONENT    |                          Never |     Yes
+  LZW_EXPONENT            |                          Never |     Yes
+  P_CONCEPTUAL_NREM       |                          Never |     Yes
+  CORTISOL_STRESS_GAIN    |                          Never |     Yes
+  GABA_NE_GAIN_MOD        |                          Never |     Yes
+  PSILOCYBIN_PHARMA_GAIN  |                          Never |     Yes
+  PTSD_DISSOC_COEFF       |                          Never |     Yes
+  ALPHA_NE_PHASIC         |                          Never |     Yes
+
+Joint parameter sweep (N=1000, +/-30% all parameters):
+Fraction maintaining 3/3 correct directions: 1000/1000 (100.0%)
+
+Robust across full +/-50%: BETA_PLAST, ALPHA_POWER_EXPONENT, LZW_EXPONENT, P_CONCEPTUAL_NREM, CORTISOL_STRESS_GAIN, GABA_NE_GAIN_MOD, PSILOCYBIN_PHARMA_GAIN, PTSD_DISSOC_COEFF, ALPHA_NE_PHASIC

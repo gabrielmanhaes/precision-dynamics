@@ -1,0 +1,18 @@
+DMN COHERENCE VALIDATION (held-out, no refitting)
+=================================================================
+
+Condition            | DMN Published |  P_sm (model)
+-------------------------------------------------------
+  healthy_waking     |         1.000 |         1.000
+  depression         |         1.180 |         1.011
+  psilocybin_low     |         0.850 |         0.868
+  psilocybin_high    |         0.650 |         0.740
+  ego_dissolution    |         0.400 |         0.618
+  meditation_deep    |         0.780 |         1.000
+  psychosis          |         0.880 |         0.388
+  propofol           |         0.450 |         1.361
+
+Direction matches: 5/7
+Key ordering correct: True
+Spearman rho: 0.143 (p=0.7358)
+MAPE: 53.0%

@@ -556,7 +556,9 @@ FMRI_PE_SCALING = 1.0  # FREE: BOLD sensitivity scaling
 # P300 amplitude: two-factor model — updating capacity (1-P)^γ × DA salience quality
 # P300 reflects precision-weighted UPDATING, not raw precision level.
 # High P (depression) → rigid priors → less updating → low P300
-# DA disruption (ADHD, psychosis) → impaired salience → low P300
+# DA disruption (ADHD, psychosis) → impaired salience gating → low P300
+# Note: psychosis is NOT globally low-P. P_conceptual is low (insufficient
+# top-down control) while P_sensory is locally elevated on canalized channels.
 # Citation: Kolossa et al. (2015) Front Hum Neurosci 9:223; Nieuwenhuis et al. (2005)
 P300_EXPONENT = 0.5  # FREE: P300 updating sensitivity (not fitted in v3)
 P300_DA_SIGMA = 0.20  # MOTIVATED: width of DA inverted-U for P300 (Nieuwenhuis 2005)

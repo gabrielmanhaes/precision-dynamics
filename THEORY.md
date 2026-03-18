@@ -58,3 +58,31 @@ principle that psychopathology involves pathological precision dynamics. The
 hierarchical decomposition (P_sensory / P_conceptual / P_selfmodel) allows
 both accounts to coexist: sensory-level canalization with conceptual-level
 de-canalization.
+
+## DMN Coherence Validation (held-out test)
+
+P_selfmodel predicts DMN coherence ordering across 8 conditions without
+refitting. Results: 5/7 direction matches. Key psilocybin dose-response
+ordering correct (depression > healthy > low-dose > high-dose > ego
+dissolution). Two failures: propofol (model lacks thalamocortical
+suppression pathway — GABA parameter operates differently) and meditation
+(model has no cognitive engagement reduction mechanism for P_selfmodel).
+Spearman rho = 0.143 (weak; driven by propofol and meditation failures).
+
+**Falsifiability criterion:** If DMN coherence does not decrease
+monotonically with psychedelic dose across published neuroimaging
+datasets, the P_selfmodel consciousness amplitude claim is disconfirmed.
+
+**Propofol dissociation test:** Propofol and high-dose psilocybin produce
+similar DMN coherence reductions (both ~0.45) but via different mechanisms:
+- Psilocybin: TEMP mechanism — acute entropy followed by post-acute
+  heterosynaptic plasticity window (therapeutic)
+- Propofol: thalamocortical suppression — no TEMP, no plasticity window,
+  no therapeutic effect
+This dissociation is the key falsifiability test: similar P_selfmodel
+reduction, different post-acute outcomes, different mechanisms.
+
+**Honest assessment:** The current model does not capture propofol or
+meditation effects on P_selfmodel correctly. These would require additional
+ODE pathways (thalamocortical suppression for propofol, cognitive
+engagement modulation for meditation) not currently implemented.

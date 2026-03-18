@@ -81,6 +81,14 @@ why mystical experience depth predicts therapeutic outcome in psilocybin
 trials. DMN coherence is the predicted neural proxy, testable against
 existing neuroimaging datasets without model refitting.
 
+**5. Robustness to parameter uncertainty**
+The 3/3 bidirectional ATX vs psilocybin dynamical prediction (P_conceptual,
+EEG alpha, LZW complexity) was tested across 1000 joint parameter
+perturbations (±30% all 9 parameters simultaneously). 100% of perturbations
+maintained correct directional predictions across all 3 dynamical biomarkers,
+confirming the result is structurally robust to the parameter uncertainty
+implied by the sloppy model eigenspectrum.
+
 ---
 
 ## Known limitations
@@ -104,6 +112,19 @@ python run.py
 
 Requires dt=0.1h for accurate phasic neuromodulator dynamics. Coarser
 timesteps degrade phasic coupling parameters.
+
+---
+
+## Methodology note
+
+This framework was developed using AI-assisted literature synthesis by
+an independent researcher with no formal neuroscience training. All
+mechanisms were verified against primary literature after identification.
+See `docs/methodology_statement.md` for full details.
+
+The bidirectional HRV treatment prediction is the key empirical test.
+It is testable in existing clinical trial datasets without new data
+collection.
 
 ---
 

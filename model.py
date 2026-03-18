@@ -1306,9 +1306,38 @@ def simulate_depression(chronic_stress=0.6, seed=42, dt=0.01,
 def simulate_psychosis(da_excess=1.5, gaba_deficit=0.3, seed=42, dt=0.01):
     """
     Psychosis: emergent from DA excess + GABA deficit.
-    Mechanism:
-      - Excess DA → aberrant salience → P disruption
-      - GABA deficit → amplified NE gain → sensory instability
+
+    PSYCHOSIS PRECISION PROFILE
+    Not globally low-P — this would contradict the CANAL framework.
+    Correct characterization (consistent with CANAL and REBUS):
+
+    P_conceptual: LOW — high-level priors insufficiently precise to
+      weight down sensory prediction errors. This is NOT de-canalization
+      of the whole system — it is failure of top-down precision control.
+
+    P_sensory: locally ELEVATED on specific canalized channels.
+      Individual stimuli are over-weighted (aberrant salience).
+      This IS canalization in the CANAL sense — Hebbian over-potentiation
+      of specific sensory channels, unchecked by conceptual-level precision.
+
+    Net empirical signatures:
+      - Elevated LZW complexity (target: 1.175) — prediction errors
+        unfiltered, increased neural entropy
+      - Reduced HRV (target: 0.80) — autonomic dysregulation
+      - Both consistent with the two-level characterization
+
+    Reconciliation with CANAL: psychosis IS canalization — at the sensory
+      level, under insufficiently precise high-level priors. Different
+      failure mode from depression (conceptual-level canalization) but not
+      an exception to the general principle.
+
+    Reference: REBUS (Carhart-Harris and Friston 2019) — psychedelics
+      and psychosis share loosened high-level priors but differ in whether
+      sensory channels become canalized (psychosis) or freed (psychedelics).
+
+    Mechanism (upstream parameters):
+      - Excess DA -> aberrant salience -> sensory-level canalization
+      - GABA deficit -> amplified NE gain -> sensory instability
     """
     return simulate_v2(
         t_span=(6.0, 30.0), dt=dt, seed=seed,
